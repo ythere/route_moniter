@@ -1,2 +1,5 @@
-calc: nodemoniter.c nodemoniter.h cJSON.c
-	gcc -o nodemoniter nodemoniter.c cJSON.c -lm -lpthread
+cc = gcc
+prom = nodemoniter
+source = nodemoniter.c cJSON.c
+$(prom): $(source)
+	$(cc) -o $(prom) $(source) -lm -lpthread
