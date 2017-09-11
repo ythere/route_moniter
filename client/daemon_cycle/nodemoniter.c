@@ -28,14 +28,6 @@ void freeData()
     int i;
     if (jsonData != NULL)
         free(jsonData);
-   /* for (; ptarget != NULL; ptarget = ptarget->next)
-    {
-	if (fp[ptarget->threadnum] != NULL)
-	    pclose(fp[ptarget->threadnum]);
-        if (ptarget->ip != NULL) 
-            free(ptarget->ip);
-        free(ptarget);
-    } */
     ptarget = NULL;
     for (i = 0; i < targetNum; i++)
     {
