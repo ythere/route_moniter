@@ -258,7 +258,7 @@ static int parseMoniter(char *moniterData, ngx_http_request_t *r)
     if (iRet)
 	status = 1;
     memset(command, 0, sizeof(command));
-    
+    mysql_close(&my_connection);
     return status;
 }
 
