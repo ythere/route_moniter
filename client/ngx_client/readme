@@ -1,0 +1,26 @@
+Note:
+  this is the client nginx which receive data as below:
+  
+  [ 
+	{
+		"id": 1,
+		"nodeIp": "192.168.2.245",
+		"detectIp": "114.114.114.114",
+		"ruleWorking":
+			{
+				"pkgPerTime": 10,
+				"refreshTimeGap": 60
+			}
+	},
+	{
+		"status": "add",
+		"id": 2,
+		"nodeIp": "192.168.2.245",
+		"detectIp": "8.8.8.8",
+		"ruleWorking":
+			{
+				"pkgPerTime": 10,
+				"refreshTimeGap": 60
+			}
+	},
+]
