@@ -163,7 +163,7 @@ void parseJson(char *data)
     char buffer[18];   
     FILE *serverfp = fopen(SERVERFILE, "r");
     fgets(buffer, sizeof(buffer), serverfp);
-    buffer[strlen(buffer) - 1] = '\0';
+    buffer[strlen(buffer)] = '\0';
     fclose(serverfp);
     serverIp = malloc(sizeof(char) * 18);
     strcpy(serverIp, buffer);
